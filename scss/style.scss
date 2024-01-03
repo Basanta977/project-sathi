@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;1,100;1,300&family=Roboto:wght@300&display=swap');
+@import 'mixin';
+
+$w: #FFFFFF;
+$b: #262A2B;
+$g: #D96927;
+$r: #FF0000;
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1170px;
+    margin: auto;
+}
+
+header {
+    padding: 5px 0;
+
+    .container {
+        @include flex;
+
+        .logo {
+            img {
+                width: 120px;
+            }
+        }
+
+        nav {
+            li {
+                display: inline;
+
+            }
+
+            a {
+                color: $b;
+                padding: 10px;
+
+                &:hover {
+                    color: #FF0000;
+                }
+            }
+        }
+
+    }
+}
+
+.banner 
+{
+    img
+     {
+        width: 100%;
+    }
+}
+.about{
+    background: $w;
+    padding: 150px 0;
+
+    .inner{
+        background: $b;
+        color: #FFFFFF;
+        max-width: 30%;
+        padding: 30px;
+
+        h2{
+            padding: 20px 0;
+        }
+    }
+}
+
+.program{
+    background: $b;
+    color: #FFFFFF;
+    max-width: 50%;
+    position: relative;
+    left: 30%;
+    padding: 30px;
+    top: -88px;
+}
+
+.block1
+{
+    background: #efe9e9;
+    color: #967B4F;
+    padding: 5px;
+
+    .container
+    {
+      max-width: 100%;
+      @include flex;
+
+      .box
+      {
+        background: $w;
+        color: #262A2B;
+        height: 300px;
+         width: 31%;
+        margin-top: 10px;
+        padding: 2px ;
+        text-align: center;
+            }
+
+            h4{
+                margin: 1px;
+                padding: 3px 0;
+            }
+    
+    }
+    
+}
+
+footer {
+    background: #212121;
+    color: #efe9e9;
+    height: 70px;
+    text-align: center;
+    padding: 10px;
+}
+
+footer {
+    .logo1{
+        img{
+            width: 120px;
+            float: left;
+        }
+       
+
+    }
+    li {
+        display: inline;
+
+    }
+
+    a {
+        color: $w;
+        padding: 25px ;
+
+        &:hover {
+            color: #FF0000;
+        }
+    }
+    
+}
+
